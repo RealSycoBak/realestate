@@ -1,4 +1,5 @@
 import './Navbar.css';
+import LogoImg from '../assets/logo.avif';
 
 export default function Navbar(){
 
@@ -6,7 +7,7 @@ return (
     <>
     <div className="Navbar">
     <div className="imgtop">
-        <img src="img" alt="realestate" />
+        <img src={LogoImg} alt="realestate" />
     </div>
 
     <nav>
@@ -18,7 +19,7 @@ return (
         </ul>
     </nav>
     </div>
-    <hr className="line" />
+    <div className="line"> </div>
     </>
 
 )
