@@ -7,7 +7,7 @@ export default function Header() {
             <header>
 
                 <div class="left">
-                    <h1 class="Title">BURE CLUB</h1>
+                    <h1 class="Title">Boston University Real Estate Fund</h1>
                     <p class="SubText">The BU Real Estate Club offers undergraduate students the opportunity to manage a real estate investment fund</p>
                 </div>
 

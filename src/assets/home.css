@@ -1,0 +1,23 @@
+.Content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%
+}
+
+
+.Content h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    color: rgb(2, 68, 142);
+}
+
+
+#Quote {
+    font-size: 4.5rem;
+}
