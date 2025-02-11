@@ -3,16 +3,23 @@ header {
     padding: 0;
     height: 800px;
     width: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 200px;
+    position: relative; /* Ensure proper stacking */
+    z-index: 3; /* Keeps header content in front */
+}
+
+header > * {
+    position: relative; /* Ensures header content is positioned correctly */
+    z-index: 4; /* Ensures header content stays above the line */
 }
 
 .Rect {
     width: 400px;
-    height: 550px;
+    height: 575px;
     background: rgba(2, 68, 142, 0.9);
     box-shadow: 
         0 20px 25px -5px rgba(0, 0, 0, 0.8),
@@ -142,6 +149,20 @@ button:hover {
 
 }
 
+#BU {
+    color: #CC0000;
+    animation: buLoad 3s forwards;
+}
+
+@keyframes buLoad {
+    0% {
+        color: #CC0000;
+    }
+    100% {
+        color: rgb(3, 87, 182);
+    }
+}
+
 /* ------------------------------------------------------------------------ */
 
 /* Animations */
@@ -164,23 +185,36 @@ button:hover {
 @media screen and (max-width: 700px) {
     header {
         flex-direction: column;
-        gap: 0px; /* You might want to reduce the gap for mobile */
+        gap: 30px; /* Reduced gap for mobile */
+        padding: 20px;
     }
 
     header > * {
-        transform: scale(0.8); /* This will make elements 80% of their original size */
+        transform: scale(0.9); /* Scale down elements for small screens */
+        z-index: 4; /* Ensure they stay above the line */
     }
 }
 
-
 @media screen and (max-width: 1037px) {
     header {
-        gap: 0px;
+        gap: 30px; /* Reduced gap for tablets */
+        padding: 20px;
     }
 
     header > * {
-        transform: scale(0.8); /* This will make elements 80% of their original size */
-        
+        transform: scale(0.9); /* Scale down elements for smaller screens */
+        z-index: 4;
+    }
+}
+
+/* Adjust title size and subtext for small screens */
+@media screen and (max-width: 700px) {
+    .Title {
+        font-size: 2rem; /* Smaller title font size */
+    }
+
+    .SubText {
+        font-size: 0.8rem; /* Smaller subtext */
     }
 }
 
