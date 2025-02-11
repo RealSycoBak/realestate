@@ -19,11 +19,11 @@ export default function Navbar() {
                     <div className="hamburger">☰</div>
                 </div>
                 <ul className={isMenuOpen ? 'active' : ''}>
-                    <li><a href="default.asp">HOME</a></li>
-                    <li><a href="news.asp">ABOUT</a></li>
-                    <li><a href="contact.asp">PORTFOLIO</a></li>
-                    <li><a href="about.asp">STUDENTS</a></li>
-                    <li><a href="about.asp">NEWS</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/portfolio">PORTFOLIO</a></li>
+                    <li><a href="/students">STUDENTS</a></li>
+                    <li><a href="/news">NEWS</a></li>
                 </ul>
             </div>
             <div className="line"> </div>

@@ -10,29 +10,6 @@ header {
     gap: 200px;
 }
 
-@media screen and (max-width: 700px) {
-    header {
-        flex-direction: column;
-        gap: 0px; /* You might want to reduce the gap for mobile */
-    }
-
-    header > * {
-        transform: scale(0.8); /* This will make elements 80% of their original size */
-    }
-}
-
-
-@media screen and (max-width: 1037px) {
-    header {
-        gap: 0px;
-    }
-
-    header > * {
-        transform: scale(0.8); /* This will make elements 80% of their original size */
-        
-    }
-}
-
 .Rect {
     width: 400px;
     height: 625px;
@@ -45,18 +22,6 @@ header {
     border-radius: 20px;
     animation: fadeIn 1s ease-out forwards;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: perspective(800px) rotateY(15deg) translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: perspective(0px) rotateY(0px) translateY(0px);
-    }
-}
-
 
 
 .lead-form {
@@ -176,3 +141,47 @@ button:hover {
     font-style: normal;
 
 }
+
+/* ------------------------------------------------------------------------ */
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: perspective(800px) rotateY(15deg) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(0px) rotateY(0px) translateY(0px);
+    }
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* Responsiveness */
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 0px; /* You might want to reduce the gap for mobile */
+    }
+
+    header > * {
+        transform: scale(0.8); /* This will make elements 80% of their original size */
+    }
+}
+
+
+@media screen and (max-width: 1037px) {
+    header {
+        gap: 0px;
+    }
+
+    header > * {
+        transform: scale(0.8); /* This will make elements 80% of their original size */
+        
+    }
+}
+
+/* ------------------------------------------------------------------------ */

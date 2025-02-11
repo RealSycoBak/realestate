@@ -12,3 +12,20 @@ body {
     background-attachment: fixed; 
     background-position: center;
 }
+
+
+/* ------------------------------------------------------------------------ */
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(158, 158, 158);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(2, 68, 142);
+    border-radius: 50px;
+    
+}
+
+/* ------------------------------------------------------------------------ */
