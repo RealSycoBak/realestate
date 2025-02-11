@@ -11,11 +11,11 @@ const ContactForm = () => {
         e.preventDefault();
 
         // Create the subject and body of the email
-        const subject = encodeURIComponent(firstName + ' ' + lastName);
-        const body = encodeURIComponent('Email: ' + email + '\nMessage: ' + message);
+        const subject = encodeURIComponent('SUBMIT A LEAD - ' + firstName + ' ' + lastName);
+        const body = encodeURIComponent('Here is my lead: ' + message + '\n' + 'Thanks, ' + email);
 
         // Construct the mailto URL
-        const mailtoLink = `mailto:realestatefund.com?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:burealestatefund@gmail.com?subject=${subject}&body=${body}`;
 
         // Open the mailto link (this opens the user's default email client)
         window.location.href = mailtoLink;
