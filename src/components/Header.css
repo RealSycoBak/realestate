@@ -10,10 +10,33 @@ header {
     gap: 200px;
 }
 
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 0px; /* You might want to reduce the gap for mobile */
+    }
+
+    header > * {
+        transform: scale(0.8); /* This will make elements 80% of their original size */
+    }
+}
+
+
+@media screen and (max-width: 1037px) {
+    header {
+        gap: 0px;
+    }
+
+    header > * {
+        transform: scale(0.8); /* This will make elements 80% of their original size */
+        
+    }
+}
+
 .Rect {
     width: 400px;
-    height: 550px;
-    background: #02448E;
+    height: 625px;
+    background: rgba(2, 68, 142, 0.9);
     box-shadow: 
         0 20px 25px -5px rgba(0, 0, 0, 0.8),
         0 10px 10px -5px rgba(0, 0, 0, 0.8);
