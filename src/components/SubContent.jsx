@@ -1,6 +1,6 @@
 import './SubContent.css';
 
-export default function SubContent({number}){
+export default function SubContent({number, children}){
 
     const isEven = number % 2 === 0;
     const bgColor = isEven ? '#02448E' : 'white';
@@ -8,7 +8,7 @@ export default function SubContent({number}){
     return (
         <>
         <div className="SubContent" style = {{backgroundColor: bgColor}}>
-
+                {children}
         </div>
         </>
 

@@ -7,8 +7,8 @@ function Home() {
   return (
     <>
       <Header />
-      <SubContent number={1} />
-      <SubContent number={2} />
+      <SubContent number={1}> </SubContent>
+      <SubContent number={2}> </SubContent>
       
     </>
   )
