@@ -9,7 +9,7 @@ function Home() {
       <Header />
       <SubContent number={1} height={"500px"}>
       <div class="Content">
-        <h1><q>SOME CONTENT</q></h1>
+        <h1>SOME CONTENT</h1>
       </div>
       </SubContent>
       <SubContent number={2}> </SubContent>

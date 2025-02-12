@@ -22,7 +22,6 @@ function Students() {
   };
 
   return (
-    <SubContent number={1} height={"100%"}>
       <div className="Screen">
         <div className={`Left ${selectedStudent ? 'show' : ''}`}>
           {selectedStudent && (
@@ -35,15 +34,16 @@ function Students() {
                 </div>
               </div>
               <div className="about-section">
-                <h3>About Them</h3>
+                <h3>About</h3>
                 <p>{selectedStudent.about}</p>
               </div>
               <div className="socials-section">
                 <h3>Socials</h3>
                 <div className="social-icons">
-                  <a href={selectedStudent.socials.twitter}><img src="twitter.png" alt="Twitter" /></a>
-                  <a href={selectedStudent.socials.linkedin}><img src="linkedin.png" alt="LinkedIn" /></a>
-                  <a href={selectedStudent.socials.github}><img src="github.png" alt="GitHub" /></a>
+                  <a href={selectedStudent.socials.facebook} aria-label="Facebook"><i className="fab fa-facebook"></i></a>
+                  <a href={selectedStudent.socials.twitter} aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+                  <a href={selectedStudent.socials.linkedin} aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
+                  <a href={selectedStudent.socials.instagram} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
                 </div>
               </div>
             </>
@@ -55,7 +55,6 @@ function Students() {
           ))}
         </div>
       </div>
-    </SubContent>
   );
 }
 
