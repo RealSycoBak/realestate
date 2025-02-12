@@ -22,31 +22,36 @@ function Students() {
   };
 
   return (
+    <>
       <div className="Screen">
-        <div className={`Left ${selectedStudent ? 'show' : ''}`}>
-          {selectedStudent && (
-            <>
-              <div className="Bigcard">
-                <img src={selectedStudent.imgSrc} alt="Avatar" className="big-avatar card-image" />
-                <div className="container">
-                  <h2><b>{selectedStudent.name}</b></h2>
-                  <h4>{selectedStudent.title}</h4>
+        <div className="Head">
+          <h1> Meet The Students </h1>
+        </div>
+        <div className="Area">
+          <div className={`Left ${selectedStudent ? 'show' : ''}`}>
+            {selectedStudent && (
+              <>
+                <div className="Bigcard">
+                  <img src={selectedStudent.imgSrc} alt="Avatar" className="big-avatar card-image" />
+                  <div className="container">
+                    <h2><b>{selectedStudent.name}</b></h2>
+                    <h4>{selectedStudent.title}</h4>
+                  </div>
                 </div>
-              </div>
-              <div className="about-section">
-                <h3>About</h3>
-                <p>{selectedStudent.about}</p>
-              </div>
-              <div className="socials-section">
-                <h3>Socials</h3>
-                <div className="social-icons">
-                  <a href={selectedStudent.socials.facebook} aria-label="Facebook"><i className="fab fa-facebook"></i></a>
-                  <a href={selectedStudent.socials.twitter} aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-                  <a href={selectedStudent.socials.linkedin} aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
-                  <a href={selectedStudent.socials.instagram} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                <div className="about-section">
+                  <h3>About</h3>
+                  <p>{selectedStudent.about}</p>
                 </div>
-              </div>
-            </>
+                <div className="socials-section">
+                  <h3>Socials</h3>
+                  <div className="social-icons">
+                    <a href={selectedStudent.socials.facebook} aria-label="Facebook"><i className="fab fa-facebook"></i></a>
+                    <a href={selectedStudent.socials.twitter} aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+                    <a href={selectedStudent.socials.linkedin} aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
+                    <a href={selectedStudent.socials.instagram} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </>
           )}
         </div>
         <div className="Right">
@@ -55,6 +60,8 @@ function Students() {
           ))}
         </div>
       </div>
+      </div>
+    </>
   );
 }
 
