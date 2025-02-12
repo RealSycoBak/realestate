@@ -12,7 +12,9 @@ function Home() {
         <h1>SOME CONTENT</h1>
       </div>
       </SubContent>
-      <SubContent number={2}> </SubContent>
+      <SubContent number={2}>
+      {/*<iframe src="https://widgets.commoninja.com/iframe/a1132ac7-abb0-47e7-9c0d-822cdae79f2d" width="500px" height="500px" frameborder="0" scrolling="no"></iframe>*/}
+      </SubContent>
     </>
   )
 }

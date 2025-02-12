@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SubContent from "../components/SubContent.jsx";
 import "../assets/students.css";
 import students from "../assets/studentData.js";
 
@@ -25,7 +24,7 @@ function Students() {
     <>
       <div className="Screen">
         <div className="Head">
-          <h1> Meet The Students </h1>
+          <h1> Meet Our Students </h1>
         </div>
         <div className="Area">
           <div className={`Left ${selectedStudent ? 'show' : ''}`}>
