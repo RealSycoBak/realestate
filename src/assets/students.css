@@ -67,7 +67,7 @@
 
 .big-avatar {
   width: 100%;
-  height: 450px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -202,13 +202,13 @@ h3 {
   }
 
   .Bigcard {
-      height: 500px;
+      height: 400px;
       width: 100%;
       max-width: 400px; /* Adjust the max-width for smaller screens */
   }
 
   .big-avatar {
-      height: 400px;
+    height: 100%;
   }
 
   .about-section, .socials-section {

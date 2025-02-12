@@ -33,13 +33,9 @@ function Students() {
               <>
                 <div className="Bigcard">
                   <img src={selectedStudent.imgSrc} alt="Avatar" className="big-avatar card-image" />
-                  <div className="container">
-                    <h2><b>{selectedStudent.name}</b></h2>
-                    <h4>{selectedStudent.title}</h4>
-                  </div>
                 </div>
                 <div className="about-section">
-                  <h3>About</h3>
+                  <h3>About: {selectedStudent.name} ({selectedStudent.title})</h3>
                   <p>{selectedStudent.about}</p>
                 </div>
                 <div className="socials-section">
