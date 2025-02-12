@@ -5,7 +5,7 @@ import students from "../assets/studentData.js";
 
 const Card = ({ name, title, imgSrc, onClick }) => (
   <div className="card" onClick={onClick}>
-    <img src={imgSrc} alt="Avatar" style={{ width: "100%" }} />
+    <img src={imgSrc} alt="Avatar" className="card-image" style={{ width: "100%" }} />
     <div className="container">
       <h4><b>{name}</b></h4>
       <p>{title}</p>
@@ -27,7 +27,7 @@ function Students() {
           {selectedStudent && (
             <>
               <div className="Bigcard">
-                <img src={selectedStudent.imgSrc} alt="Avatar" className="big-avatar" />
+                <img src={selectedStudent.imgSrc} alt="Avatar" className="big-avatar card-image" />
                 <div className="container">
                   <h2><b>{selectedStudent.name}</b></h2>
                   <h4>{selectedStudent.title}</h4>

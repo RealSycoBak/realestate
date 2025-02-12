@@ -7,6 +7,16 @@
   flex-shrink: 0; /* Prevents shrinking */
   cursor: pointer; /* Change cursor on hover */
   max-width: 100%; /* Prevent overflow */
+  overflow: hidden; /* Prevents image overflow */
+  display: flex; /* Enables flex layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover; /* This maintains aspect ratio while filling the container */
+  object-position: top;
+  height: 230px
 }
 
 
@@ -22,7 +32,7 @@
   width: calc(100% - 40px);
   margin: 10px; /* Reduce margin for better wrapping */
   flex-shrink: 0; /* Prevents shrinking */
-  max-width: 100%; /* Prevent overflow */
+
   max-width: calc(100vw - 40px); /* Ensure card doesn't exceed screen width */
   box-sizing: border-box; /* Include padding in width calculation */
 }
@@ -83,12 +93,10 @@ h3 {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 70px;
-  flex-direction: column;
+  text-align: center;
+  padding-top: 15px;
+ 
 }
 
 .Right {
