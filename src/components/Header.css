@@ -170,11 +170,11 @@ button:hover {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: perspective(800px) rotateY(15deg) translateY(20px);
+        transform: rotateY(15deg) translateY(20px); /* perspective(800px) not working in build */
     }
     to {
         opacity: 1;
-        transform: perspective(0px) rotateY(0px) translateY(0px);
+        transform: rotateY(0px) translateY(0px); /* perspective(0px) not working in build */
     }
 }
 
