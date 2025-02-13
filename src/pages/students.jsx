@@ -34,16 +34,15 @@ function Students() {
                   <img src={selectedStudent.imgSrc} alt="Avatar" className="big-avatar card-image" />
                 </div>
                 <div className="about-section">
-                  <h3>About: {selectedStudent.name} ({selectedStudent.title})</h3>
+                  <h3>{selectedStudent.name} | {selectedStudent.title}</h3>
                   <p>{selectedStudent.about}</p>
                 </div>
                 <div className="socials-section">
-                  <h3>Socials</h3>
                   <div className="social-icons">
-                    <a href={selectedStudent.socials.facebook} aria-label="Facebook"><i className="fab fa-facebook"></i></a>
-                    <a href={selectedStudent.socials.twitter} aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-                    <a href={selectedStudent.socials.linkedin} aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
-                    <a href={selectedStudent.socials.instagram} aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                    <a href={selectedStudent.socials.facebook} aria-label="Facebook" id="facebook"><i className="fab fa-facebook"></i></a>
+                    <a href={selectedStudent.socials.twitter} aria-label="Twitter" id="twitter"><i className="fab fa-twitter"></i></a>
+                    <a href={selectedStudent.socials.linkedin} aria-label="LinkedIn" id="linkedin"><i className="fab fa-linkedin"></i></a>
+                    <a href={selectedStudent.socials.instagram} aria-label="Instagram" id="instagram"><i className="fab fa-instagram"></i></a>
                   </div>
                 </div>
               </>
