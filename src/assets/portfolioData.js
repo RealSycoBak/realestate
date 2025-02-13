@@ -9,14 +9,14 @@ const projects = [
     hashtags: ["#realestate", "#realestate", "#realestate", "#realestate"]
   },
   {
-    title: "Project Title",
+    title: "Project Title2",
     imgSrc: TempImage,
     about: "Passionate about designing innovative solutions. Enjoys working with teams to create cutting-edge projects.",
     details: "Detailed description of the project, including its goals, challenges, and outcomes.",
     hashtags: ["#realestate", "#realestate", "#realestate", "#realestate"]
   },
   {
-    title: "Project Title",
+    title: "Project Title3",
     imgSrc: TempImage,
     about: "Passionate about designing innovative solutions. Enjoys working with teams to create cutting-edge projects.",
     details: "Detailed description of the project, including its goals, challenges, and outcomes.",

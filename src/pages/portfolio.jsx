@@ -67,6 +67,20 @@ const Card = ({ project, onClick }) => (
 function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  // Use useEffect to manage body class
+  React.useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [selectedProject]);
+
   return (
     <div className="Layout">
       <div className="LayoutTitle">
@@ -77,7 +91,7 @@ function Portfolio() {
           <Card 
             key={index} 
             project={project} 
-            onClick={setSelectedProject}
+            onClick={() => setSelectedProject(project)}
           />
         ))}
       </div>
