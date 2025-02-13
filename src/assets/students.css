@@ -12,6 +12,7 @@
   flex-direction: column; /* Stack children vertically */
   background-color: white;
   border-radius: 10px;
+  
 }
 
 .card-image {
@@ -83,19 +84,19 @@
 }
 
 #instagram {
-  color: red;
+  color: #E4405F;  /* Instagram brand red/pink */
 }
 
 #linkedin {
-  color: blue;
+  color: #0A66C2;  /* LinkedIn brand blue */
 }
 
 #twitter {
-  color: cyan;
+  color: #1DA1F2;  /* Twitter/X blue */
 }
 
 #facebook {
-  color: blue;
+  color: #1877F2;  /* Facebook brand blue */
 }
 
 .social-icons a:hover {
@@ -111,6 +112,38 @@
   border-radius: 10px;
   margin-top: 10px;
   box-sizing: border-box;
+}
+
+.about-section h3 {
+  font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.about-section p {
+  font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.container h4 {
+  font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.container p {
+  font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8rem;
 }
 
 h3 {
@@ -138,7 +171,7 @@ h3 {
 .container {
   height: 70px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 16px;
  
 }
 
@@ -165,7 +198,7 @@ h3 {
   opacity: 0; /* Start hidden */
   transform: translateX(0); /* Start off-screen */
   transition: opacity 0.5s ease, transform 0.5s ease;
-  animation: slideIn 2s;
+  animation: slideIn 1s;
 }
 
 .Left.show {
