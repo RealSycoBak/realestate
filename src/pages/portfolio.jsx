@@ -31,12 +31,11 @@ const Modal = ({ project, onClose }) => {
                 <p>{project.details}</p>
               </>
             )}
-            {project.technologies && (
+            {project.hashtags && (
               <>
-                <h3>Technologies Used</h3>
                 <div className="tech-stack">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
+                  {project.hashtags.map((hashtag, index) => (
+                    <span key={index} className="tech-tag">{hashtag}</span>
                   ))}
                 </div>
               </>
